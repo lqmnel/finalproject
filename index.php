@@ -12,7 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Final Project | Luqman Elhakim Ibnu Hasan</title>
+    <title>Project TA | Luqman Elhakim Ibnu Hasan</title>
     <style>
       body {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -90,15 +90,10 @@
           <div class="carousel-wrapper d-flex align-items-center">
             <div class="container">
               <div class="row mb-5">
-              <?php
-                include "connection.php";
-                $query = mysqli_query($conn, 'SELECT * FROM carousel WHERE id = 4');
-                while ($data = mysqli_fetch_array($query)) {
-              ?>
                 <div class="col-8">
-                  <h2 style="color: white"><strong><?= $data['judul_mini'] ?></strong></h2>
+                  <h2 style="color: white"><strong> Why Tech</strong></h2>
                   <p style="color: white">
-                    <?= $data['caption'] ?>
+                  Teknologi juga berperan untuk mempermudah menjalankan aktivitas. Tentu saja, dengan mudahnya dalam mengakses teknologi, maka aktivitas pekerjaan yang dilakukan dengan teknologi tersebut pun terasa ringan dan mudah untuk dijalankan. Lagi, dengan memanfaatkan teknologi memungkinkan perusahaan bisa melakukan efisiensi. Karyawan bisa bekerja dengan lebih cepat, sehingga teknologi pun bisa menghemat waktu. Artinya, adopsi teknologi memungkinkan perusahaan bisa lebih efisien dan efektif.
                   </p>
                   <a href="/finalproject/carousel/why.php"
                     ><button style="width: 150px; height: 30px; border-radius: 8px; background-color: white; color: black; border-style: none">Baca Selengkapnya</button></a
@@ -109,7 +104,6 @@
                     <img src="image/tech1.jpg" alt="tech1" class="d-block w-100" />
                   </div>
                 </div>
-              <?php } ?>
               </div>
             </div>
           </div>
@@ -118,15 +112,10 @@
           <div class="carousel-wrapper d-flex align-items-center">
             <div class="container">
               <div class="row mt-5 mb-5">
-              <?php
-                include "connection.php";
-                $query = mysqli_query($conn, 'SELECT * FROM carousel WHERE id = 5');
-                while ($data = mysqli_fetch_array($query)) {
-              ?>
                 <div class="col-8">
-                  <h2 style="color: black"><strong><?= $data['judul_mini'] ?></strong></h2>
+                  <h2 style="color: black"><strong>Pengertian Teknologi</strong></h2>
                   <p style="color: black">
-                    <?= $data['caption'] ?>
+                  Secara bahasa teknologi berasal dari bahasa Yunani yaitu tekhnologia yang merupakan gabungan dari “techne” dan “logos”. Tehcne berarti art or skill sedangkan logos berarti science of study. Dalam Kamus Besar Bahasa Indonesia, teknologi adalah seluruh sarana untuk menyediakan barang-barang yang dibutuhkan bagi kelangsungan dan kenyamanan hidup manusia.
                   </p>
                   <a href="/finalproject/carousel/pengertian.php"
                     ><button style="width: 150px; height: 30px; border-radius: 8px; background-color: #bfe6ed; color: black; border-style: none">Baca Selengkapnya</button></a
@@ -137,7 +126,6 @@
                     <img src="image/tech2.jpg" alt="" class="d-block w-100" />
                   </div>
                 </div>
-              <?php } ?>
               </div>
             </div>
           </div>
@@ -146,15 +134,10 @@
           <div class="carousel-wrapper d-flex align-items-center">
             <div class="container">
               <div class="row mt-5 mb-5">
-              <?php
-                include "connection.php";
-                $query = mysqli_query($conn, 'SELECT * FROM carousel WHERE id = 6');
-                while ($data = mysqli_fetch_array($query)) {
-              ?>
                 <div class="col-8">
-                  <h2 style="color: black"><strong><?= $data['judul_mini'] ?></strong></h2>
+                  <h2 style="color: black"><strong>About Industrial Revolution 4.0 in Indonesia</strong></h2>
                   <p style="color: black">
-                    <?= $data['caption'] ?>
+                  Revolusi Industri 4.0 merupakan fenomena yang mengkolaborasikan teknologi siber dan teknologi otomatisasi. Revolusi Industri 4.0 dikenal juga dengan istilah “cyber physical system”. Konsep penerapannya berpusat pada otomatisasi. Dibantu teknologi informasi dalam proses pengaplikasiannya, keterlibatan tenaga manusia dalam prosesnya dapat berkurang. Dengan demikian, efektivitas dan efisiensi pada suatu lingkungan kerja dengan sendirinya bertambah. Dalam dunia industri, hal ini berdampak signifikan pada kualitas kerja dan biaya produksi.
                   </p>
                   <a href="/finalproject/carousel/industry.php"
                     ><button style="width: 150px; height: 30px; border-radius: 8px; background-color: #c8c8c8; color: black; border-style: none">Baca Selengkapnya</button></a
@@ -165,7 +148,6 @@
                     <img src="image/revolusiindustri.jpg" alt="" class="d-block w-100" />
                   </div>
                 </div>
-              <?php } ?>
               </div>
             </div>
           </div>
@@ -174,31 +156,17 @@
     </div>
     <!-- Akhir Carousel -->
 
-    <!-- Connect to Database -->
-    <?php
-        include "connection.php";
-        $query = mysqli_query($conn, 'SELECT * FROM headlines WHERE id = 1');
-        while ($data = mysqli_fetch_array($query)) {
-    ?>
-    <!-- Connect to Database -->
-
     <!-- Awal Headline -->
     <section id="headline">
       <div class="container">
         <div class="row justify-content-center fs-5 mb-3" style="text-align: justify">
           <div class="col-4">
-            <h3><a href="/finalproject/headline/peran.php" style="color: #dee7e7"><?php echo $data["judul"]; ?></a></h3>
+            <h3><a href="/finalproject/headline/peran.php" style="color: #dee7e7">Peran Teknologi Informasi Terhadap Pelayanan Publik</a></h3>
             <br>
             <p style="font-size: 20px;">
-              <?php echo $data['caption'] ?>
+              Memberikan pelayanan publik yang prima merupakan tujuan setiap pemerintah daerah. Pemerintah daerah saat ini berlomba-lomba menerapkan dan memanfaatkan kemajuan teknologi informasi untuk dapat membantu mewujudkannya. Pemanfaatan teknologi informasi tersebut mencakup aktivitas yang saling berkaitan yaitu pengolahan data, pengelolaan informasi, dan sistem manajemen. Perkembangan teknologi informasi serta penerapan konektivitas internet ke dalam tata kelola pemerintah diharapkan mampu mengatasi berbagai macam persoalan melalui peningkatan efisiensi, inovasi, produktivitas, perluasan jangkauan dan penghematan biaya.
             </p>
           </div>
-      <?php } ?>
-      <?php
-        include "connection.php";
-        $query = mysqli_query($conn, 'SELECT * FROM headlines WHERE id = 2');
-        while ($data = mysqli_fetch_array($query)) {
-      ?>
           <div class="col-4">
             <br /><br /><br /><br />
             <img src="image/coding.jpg" alt="" class="w-100" /> <br /><br /><br /><br />
@@ -206,13 +174,12 @@
           </div>
           <div class="col-4">
             <h3>
-              <a href="/finalproject/headline/kominfo.php" style="color: #dee7e7"><?php echo $data['judul'] ?></a>
+              <a href="/finalproject/headline/kominfo.php" style="color: #dee7e7">Menkominfo Ungkap Prediksi Ngeri Tren Start Up, Ada Solusi?</a>
             </h3>
             <p>
-              <?php echo $data['caption'] ?>
+              Menteri Komunikasi dan Informatika (KOMINFO) Johnny G. Plate mengungkap prediksi soal tren di perusahaan rintisan atau start up di Indonesia tak lama lagi. "Tolong kita perhatikan baik-baik, saya minta untuk kita perhatikan karena tren layoff ini akan bisa mengingkat," cetusnya, saat bicara dalam acara Forum Ekonomi Digital KOMINFO (FEDK) ke-5 di Jakarta, Kamis (1/12). Pernyataan ini muncul mengomentari fenomena yang layoff atau pemutusan hubungan kerja (PHK) yang sedang marak terjadi di perusahaan rintisan tanah air. Pada November, misalnya, ada layoff di startup Ajaib, GoTo, Ruangguru, Sirclo, hingga Ula.
             </p>
           </div>
-      <?php } ?>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -224,8 +191,6 @@
       </svg>
     </section>
     <!-- Akhir Headline -->
-    
-    
 
     <!-- Awal About -->
     <section id="about">
@@ -237,36 +202,24 @@
         </div>
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-6">
-          <?php 
-            include "connection.php";
-            $query = mysqli_query($conn, 'SELECT * FROM encyclopedia WHERE id = 4');
-            while ($data = mysqli_fetch_array($query)) {
-          ?>
-            <a href="/finalproject/ensiklopedia/history.php"><h3 style="color: black"><?php echo $data['judul'] ?></h3></a>
+            <a href="/finalproject/ensiklopedia/history.php"><h3 style="color: black">Sejarah Teknologi</h3></a>
             <br /><br />
             <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" class="w-75" />
             <br /><br />
             <p style="text-align: justify;;">
-              <?php echo $data['caption'] ?>
+              Berkembangnya suatu teknologi aplikatif dapat ditinjau dari kebutuhan manusia sendiri untuk seperti mengatasi perubahan cuaca dan iklim, menghadapi serangan hewan buas, mempermudah aktivitas ekonomi hingga peperangan. Namun teknologi juga dapat berkembang dari aspek teoretis yakni hanya berlandaskan keingintahuan manusia akan fenomena alam yang terjadi disekitarnya, seperti penemuan hukum gravitasi dan kalkulus oleh Isaac Newton dan Leibniz. Sains dan teknologi adalah dua hal yang tidak dapat dipisahkan begitu pula sejarah dan perkembangannya. Namun demikian tentu saja dapat terlihat perbedaan yang mencolok saat membahas sejarah dan perkembangan teknologi, sejarah teknologi membahas aspek terapan dari sains, seperti penemuan peralatan atau teknik untuk memudahkan suatu aktivitas manusia. Sedangkan sejarah sains mempunyai cangkupan yang lebih luas karena mengkaji suatu gejala alam atau gejala yang terjadi di kehidupan manusia berdasarkan aspek-aspek teoretis ataupun yang berkaitan dengan hal-hal abstrak secara matematis hingga ranah filsafat.
             </p>
           </div>
-          <?php } ?>
           <div class="col-md-6">
-          <?php
-            include "connection.php";
-            $query = mysqli_query($conn, 'SELECT * FROM encyclopedia WHERE id = 6');
-            while ($data = mysqli_fetch_array($query)) {
-          ?>
-            <a href="/finalproject/ensiklopedia/future.php"><h3 style="color: black"><?= $data['judul'] ?></h3></a>
+            <a href="/finalproject/ensiklopedia/future.php"><h3 style="color: black">Tren Teknologi di Masa Depan, Bantu Permudah Kehidupan Manusia</h3></a>
             <br />
             <img src="https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" class="w-75" />
             <br />
             <br />
             <p style="text-align: justify;">
-              <?= $data['caption'] ?>
+              Dalam perkembangannya, imajinasi manusia bekerja lebih keras dan lebih progresif daripada yang diketahui. Angan-angan akan dunia masa depan yang lebih canggih dan modern telah tertanam di benak manusia sejak awal pertama kali mereka bisa mengingat. Sejak kecil, manusia telah dijejali pemikiran akan teknologi di masa depan yang lebih maju dan seiring dengan pertumbuhannya, manusia juga menyaksikan teknologi terus berevolusi menjadi lebih baik dan lebih dapat diandalkan. Para ilmuwan dan insinyur terus bekerja untuk mendesain ulang teknologi di masa depan dan dengan caranya masing-masing. Meski mungkin Anda tak menyadarinya, namun tingkat kemajuan teknologi selama setengah abad terakhir adalah hal yang cukup mengejutkan, baik di bidang-bidang seluas komputasi, kedokteran, komunikasi, dan ilmu material. Berikut adalah daftar dari beberapa tren teknologi di masa depan yang paling menarik dan digadang-gadang akan mengubah dunia, mulai dari kembaran manusia digital hingga teknologi yang dapat mengedit gen, dilansir dari forbes.com dan sciencefocus.com.
             </p>
           </div>
-          <?php } ?>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -377,38 +330,6 @@
       </div>
     </section>
     <!-- Akhir Galery -->
-
-    <!-- Awal Contact Us
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Us</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-              <div class="mb-3">
-                <label for="nama" class="form-label"><strong>Nama Lengkap:</strong></label>
-                <input type="text" class="form-control" id="nama" name="nama" required/>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label"><strong>Email:</strong></label>
-                <input type="email" class="form-control" id="email" name="email" required/>
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label"><strong>Pesan:</strong></label>
-                <textarea class="form-control" id="pesan" name="pesan" rows="3" required></textarea>
-              </div>
-              <p style="color: red; font-size: 12px;"><?php if(isset($_SESSION['error'])){ echo($_SESSION['error']); }?></p>
-              <button type="submit" name="submit1" class="btn btn-block my-3" style="color: white; background-color: #22428d;">Kirim</button></button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    Akhir Contact Us -->
 
     <!-- Awal Footer -->
     <footer id="footer">
